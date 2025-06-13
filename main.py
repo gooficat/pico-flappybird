@@ -79,7 +79,7 @@ try:
                 pipes[i] = PipeColumn(128)
                 score += 1
             pipes[i].draw()
-            pipes[i].x -= 1 + int(score/30)
+            pipes[i].x -= 1 + int(score/10)
             if (bird.y > pipes[i].low_y) or (bird.y < pipes[i].top_y+16):
                 if pipes[i].x < bird.x and pipes[i].x+8 > bird.x:
                     playing = False
